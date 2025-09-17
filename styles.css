@@ -1,0 +1,366 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-color: #f2f4f7;
+  width: 100vw;
+  height: 100vh;
+}
+
+header {
+  height: 10%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: relative;
+  background-color: rgba(255, 203, 219, 1);
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.logo > span {
+  color: #fa628a;
+  margin-right: 0.5rem;
+}
+
+.logo-chef-container {
+  position: relative;
+  height: 100%;
+}
+
+.logo-hat {
+  width: 25px;
+  position: absolute;
+  top: -16px;
+  left: 20%;
+  transform: translateX(-100%) rotate(-30deg);
+}
+
+.nav-links {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  line-height: 30px;
+  letter-spacing: 0.1rem;
+  background-color: #ffffff;
+  padding: 0.3rem;
+}
+
+.nav-links.active {
+  display: flex;
+}
+
+.nav-links > li {
+  padding: 0.2rem;
+}
+
+.burguer-menu {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  background-color: #ffcbdb;
+}
+
+.burguer-menu span {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+main {
+  padding-top: 5rem;
+}
+
+.hero-container {
+  width: 100%;
+  height: 90%;
+}
+
+h1 {
+  width: 90%;
+  margin: 1.5rem auto;
+  font-size: 38px;
+  text-align: center;
+}
+
+.title-top {
+  font-family: "Dancing Script";
+  font-size: 44px;
+  color: #fa628a;
+}
+
+.hero-content{
+  max-width: 90%;
+  margin: 1rem auto 5rem auto;
+  letter-spacing: 1.3px;
+  text-align: center;
+}
+
+.cake {
+  max-width: 70%;
+  display: block;
+  margin: 0 auto;
+}
+
+.about-container{
+  width: 100%;
+  height: 100%;
+  margin: 4rem 0;
+}
+
+.divisor-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 6px;
+  gap: 1rem;
+}
+
+.logo-divisor {
+  width: 30px;
+}
+
+.divisor {
+  width: 90%;
+  height: 2px;
+  background-color: #FCB7D4;
+  border-radius: 5px;
+}
+
+
+.img-chef-julya {
+  max-width: 90%;
+  max-height: 50%;
+  display: block;
+  margin: 4rem auto 1rem;
+  border-radius: 6px;
+  box-shadow: 4px 2px 9px rgba(0, 0, 0, .5);
+}
+
+.about-title{
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  font-size: 26px;
+  margin-top: 3rem;
+}
+
+.about-p {
+  max-width: 90%;
+  display: block;
+  margin: 0 auto;
+  font-size: 14px;
+  margin-top: 1rem;
+  text-align: center;
+  letter-spacing: 1.3px;
+  line-height: 1.4rem;
+}
+
+.gallery-container {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+}
+
+.gallery-title {
+  margin: 2rem 2rem 1rem;
+  text-align: center;
+}
+
+.gallery-content {
+  text-align: center;
+  font-size: .8rem;
+}
+
+.swiper {
+  margin: 3rem auto;
+  width: 100%;
+  height: 55vh;
+}
+
+.gallery-image {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  max-height: 70vh;
+  border-radius: 5px;
+}
+
+.footer-container {
+  display: block;
+  width: 100vw;
+  padding: 1rem;
+}
+
+.footer-title {
+  text-align: center;
+  margin: 2rem 2rem 1rem;
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.cta-button {
+  display: block;
+  padding: 1rem;
+  background-color: #FFCBDB;
+  width: 80%;
+  text-align: center;
+  margin: 1rem auto;
+  border-radius: 5px;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+}
+
+.insta-button {
+  display: block;
+  padding: 1rem;
+  background-color: #FFCBDB;
+  width: fit-content;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+@media (min-width: 600px) {
+  .burguer-menu {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    width: auto;
+    list-style: none;
+    background: transparent;
+    gap: 1rem;
+    font-weight: 500;
+    color: #111;
+    font-size: 1rem;
+  }
+
+  .gallery-image {
+    max-width: 70%;
+    object-fit: cover;
+  }
+
+  .swiper-slide video {
+    object-fit: cover;
+  }
+
+  main {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  .img-chef-julya {
+    max-height: 800px;
+  }
+}
+
+@media (min-width: 844px) {
+  .hero-container {
+    height: 100vh;
+  }
+  .hero-content {
+    margin: 4rem auto 8rem;
+    letter-spacing: 1.5px;
+    font-size: 1.4rem;
+    line-height: 1.8;
+  }
+
+  .gallery-image {
+    max-width: 42%;
+  }
+
+  .gallery-content {
+    font-size: 1.3rem;
+  }
+
+
+}
+
+@media (min-height: 932px) {
+  .hero-content {
+    margin: 5rem auto 8rem;
+  }
+
+  .gallery-image {
+    max-width: 70%;
+  }
+}
+
+@media (min-width: 1170px) {
+  .hero-content {
+    margin: 1rem auto 8rem;
+    font-size: 1rem;
+  }
+
+  h1 {
+    margin-top: 2.5rem;
+  }
+
+  main {
+    margin-bottom: 0;
+  }
+
+  .cake {
+    max-width: 60%;
+    margin: 2rem auto;
+  }
+  
+  .about-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .about-title {
+    font-size: 40px;
+  }
+
+  .about-p {
+    font-size: 18px;
+  }
+
+  .cta-button {
+    width: 25%;
+  }
+
+  .footer-container {
+    max-width: 100%;
+  }
+}

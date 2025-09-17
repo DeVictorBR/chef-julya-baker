@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js" defer></script>
+  <script src="./script.js" defer></script>
+  <title>Chef Julya</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="#" class="logo">
+        <span class="logo-chef-container">
+          <img class="logo-hat" src="./assets/chef-hat.png" alt="" />
+          Chef
+        </span>
+        Julya
+      </a>
+      <div class="burguer-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Sobre mim</a></li>
+        <li><a href="#gallery">Galeria</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section className="hero-container" id="home">
+      <h1>
+        Bem-vindo à Confeitaria da <span class="title-top">Chef Julya!</span>
+      </h1>
+      <img class="cake" src="./assets/cake.png" alt="cake">
+      <p class="hero-content">
+        Seja bem-vindo ao doce mundo da Chef Julya, onde cada sobremesa é feita com
+        carinho, dedicação e os melhores ingredientes.
+      </p>
+      <section />
+      <div class="divisor-container">
+        <span class="divisor"></span>
+        <img class="logo-divisor" src="./assets/gravata-borboleta.png" alt="">
+        <span class="divisor"></span>
+      </div>
+      <section class="about-container" id="about">
+        <img class="img-chef-julya" src="./assets/chef-julya.png" alt="foto da chef julya">
+        <div>
+          <h2 class="about-title">Chef Julya</h2>
+          <p class="about-p">
+            Apaixonada por doces e bolos desde pequena, Julya transformava ingredientes simples em verdadeiras obras de
+            arte. O que começou como um hobby se tornou sua vocação. Dedicada a essa arte, ela aprimorou suas técnicas
+            com
+            cursos e muita prática.
+          </p>
+        </div>
+
+      </section>
+      <div class="divisor-container">
+        <span class="divisor"></span>
+        <img class="logo-divisor" src="./assets/gravata-borboleta.png" alt="">
+        <span class="divisor"></span>
+      </div>
+      <section id="gallery" class="gallery-container">
+        <h2 class="gallery-title">Nossas delícias</h2>
+        <p class="gallery-content">Conheça alguns dos bolos e doces que saíram da nossa cozinha, feitos com
+          dedicação e muito sabor.
+        </p>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./assets/bolo1.jpeg" alt="Bolo de chocolate com frutas vermelhas" class="gallery-image" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/bolo2.jpeg" alt="Cupcakes decorados" class="gallery-image" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/bolo3.jpeg" alt="Macarons coloridos" class="gallery-image" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/bolo4.jpeg" alt="Bolo de casamento com flores" class="gallery-image" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/bolo5.jpeg" alt="Doces finos variados" class="gallery-image" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/bolo6.jpeg" alt="Torta de limão" class="gallery-image" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/bolo7.jpeg" alt="Bolo de chocolate com frutas vermelhas" class="gallery-image" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/bolo8.jpeg" alt="Cupcakes decorados" class="gallery-image" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/bolo9.jpeg" alt="Macarons coloridos" class="gallery-image" />
+            </div>
+            <div class="swiper-slide">
+              <video muted playsinline class="gallery-image">
+                <source src="./assets/bolo10.mp4" type="video/mp4" />
+                Seu navegador não suporta o elemento do vídeo.
+              </video>
+            </div>
+            <div class="swiper-slide">
+              <video muted playsinline class="gallery-image">
+                <source src="./assets/bolo11.mp4" type="video/mp4" />
+                Seu navegador não suporta o elemento do vídeo.
+              </video>
+            </div>
+            <div class="swiper-slide">
+              <video muted playsinline class="gallery-image">
+                <source src="./assets/ovo1.mp4" type="video/mp4" />
+                Seu navegador não suporta o elemento do vídeo.
+              </video>
+            </div>
+            <div class="swiper-slide">
+              <video muted playsinline class="gallery-image">
+                <source src="./assets/ovo2.mp4" type="video/mp4" />
+                Seu navegador não suporta o elemento do vídeo.
+              </video>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="divisor-container">
+        <span class="divisor"></span>
+        <img class="logo-divisor" src="./assets/gravata-borboleta.png" alt="">
+        <span class="divisor"></span>
+      </div>
+      <footer class="footer-container">
+        <h2 class="footer-title">Contato</h2>
+        <p class="footer-content">Faça seu pedido e tenha seu doce estampado na nossa galeria</p>
+        <a class="cta-button"
+          href="https://wa.me/5511945406865?text=Olá%20Chefe%20Julya!%20Gostaria%20de%20fazer%20um%20pedido.">Faça seu
+          pedido</a>
+        <a href="https://www.instagram.com/chef.julya/" class="insta-button">Instagram</a>
+
+      </footer>
+      <main />
+</body>
+
+</html>
